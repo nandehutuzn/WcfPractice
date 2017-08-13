@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7d71d913-64ae-4d82-b8d1-06b3ebad9fbb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3904/MyContract.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MyContract.wsdl" MetadataType="Wsdl" ID="b2b483f1-7534-417f-ae5c-4e421e3c50d5" SourceId="1" SourceUrl="http://localhost:3904/MyContract.svc?wsdl" />
+    <MetadataFile FileName="MyContract.xsd" MetadataType="Schema" ID="44e3c0d4-689d-4565-8d63-e99df23bbbb0" SourceId="1" SourceUrl="http://localhost:3904/MyContract.svc?xsd=xsd0" />
+    <MetadataFile FileName="MyContract1.xsd" MetadataType="Schema" ID="c23dc391-23be-4729-b9dd-f8944caae510" SourceId="1" SourceUrl="http://localhost:3904/MyContract.svc?xsd=xsd1" />
+    <MetadataFile FileName="MyContract2.xsd" MetadataType="Schema" ID="7a2f8eed-8408-44e1-89bc-9f771270e96f" SourceId="1" SourceUrl="http://localhost:3904/MyContract.svc?xsd=xsd2" />
+    <MetadataFile FileName="MyContract.disco" MetadataType="Disco" ID="1863f765-7764-47d9-beb8-c9fbed6e792a" SourceId="1" SourceUrl="http://localhost:3904/MyContract.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

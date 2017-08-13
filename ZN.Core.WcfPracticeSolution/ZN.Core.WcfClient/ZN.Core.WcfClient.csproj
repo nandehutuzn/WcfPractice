@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5C8D6D5C-EB29-40F1-939F-C6F1CAC3FC89}</ProjectGuid>
+    <ProjectGuid>{4809CAA3-0347-4653-A357-8A5FAC1C1FC8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ZN.Core.WcfPractice</RootNamespace>
-    <AssemblyName>ZN.Core.WcfPractice</AssemblyName>
+    <RootNamespace>ZN.Core.WcfClient</RootNamespace>
+    <AssemblyName>ZN.Core.WcfClient</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,15 +45,48 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\MyContractProxy\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Service References\MyContractProxy\MyContract.wsdl" />
+    <None Include="Service References\MyContractProxy\MyContract.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MyContractProxy\MyContract1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MyContractProxy\MyContract2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MyContractProxy\ZN.Core.WcfClient.MyContractProxy.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ZN.Core.WcfService\ZN.Core.WcfService.csproj">
-      <Project>{862385ab-9929-42a8-9791-32fb41a0b136}</Project>
-      <Name>ZN.Core.WcfService</Name>
-    </ProjectReference>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\MyContractProxy\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MyContractProxy\MyContract.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MyContractProxy\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MyContractProxy\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MyContractProxy\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
