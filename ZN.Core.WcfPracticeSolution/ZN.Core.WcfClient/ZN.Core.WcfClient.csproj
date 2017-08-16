@@ -43,9 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyCallBack.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\MyContractProxy\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MyDupleServiceProxy\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -66,12 +72,20 @@
     <None Include="Service References\MyContractProxy\ZN.Core.WcfClient.MyContractProxy.CompositeType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\MyDupleServiceProxy\MyDupleService.wsdl" />
+    <None Include="Service References\MyDupleServiceProxy\MyDupleService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MyDupleServiceProxy\MyDupleService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\MyContractProxy\" />
+    <WCFMetadataStorage Include="Service References\MyDupleServiceProxy\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\MyContractProxy\MyContract.disco" />
@@ -84,6 +98,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\MyContractProxy\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MyDupleServiceProxy\MyDupleService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MyDupleServiceProxy\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MyDupleServiceProxy\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MyDupleServiceProxy\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

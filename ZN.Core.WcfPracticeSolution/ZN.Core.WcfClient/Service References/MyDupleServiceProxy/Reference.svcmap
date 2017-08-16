@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a701a236-355a-417b-b8d0-62b6dcfcf6d7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8001/MyDupleService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MyDupleService.xsd" MetadataType="Schema" ID="ea07c096-9ed1-4109-980b-4ab4d37c71bd" SourceId="1" SourceUrl="http://localhost:8001/MyDupleService?xsd=xsd1" />
+    <MetadataFile FileName="MyDupleService1.xsd" MetadataType="Schema" ID="34f4338a-5ded-4e54-8be9-9cc91611cb78" SourceId="1" SourceUrl="http://localhost:8001/MyDupleService?xsd=xsd0" />
+    <MetadataFile FileName="MyDupleService.disco" MetadataType="Disco" ID="6fa54f91-bd39-400d-b370-49ce6ca00495" SourceId="1" SourceUrl="http://localhost:8001/MyDupleService?disco" />
+    <MetadataFile FileName="MyDupleService.wsdl" MetadataType="Wsdl" ID="28a5aaf1-6f0c-4f65-9df3-f9084257260a" SourceId="1" SourceUrl="http://localhost:8001/MyDupleService?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

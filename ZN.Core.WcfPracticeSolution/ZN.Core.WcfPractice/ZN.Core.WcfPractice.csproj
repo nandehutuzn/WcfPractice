@@ -49,6 +49,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ZN.Core.WcfServiceLib\ZN.Core.WcfServiceLib.csproj">
+      <Project>{47f89752-1244-41ea-8622-ada4ddf5bc4c}</Project>
+      <Name>ZN.Core.WcfServiceLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ZN.Core.WcfService\ZN.Core.WcfService.csproj">
       <Project>{862385ab-9929-42a8-9791-32fb41a0b136}</Project>
       <Name>ZN.Core.WcfService</Name>
